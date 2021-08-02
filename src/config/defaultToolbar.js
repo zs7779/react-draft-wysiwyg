@@ -17,8 +17,8 @@ import eraser from '../../images/eraser.svg';
 import link from '../../images/link.svg';
 import unlink from '../../images/unlink.svg';
 import emoji from '../../images/emoji.svg';
-import embedded from '../../images/embedded.svg';
-import image from '../../images/image.svg';
+// import embedded from '../../images/embedded.svg';
+// import image from '../../images/image.svg';
 import undo from '../../images/undo.svg';
 import redo from '../../images/redo.svg';
 import subscript from '../../images/subscript.svg';
@@ -38,9 +38,9 @@ export default {
     "textAlign",
     "colorPicker",
     "link",
-    "embedded",
+    // "embedded",
     "emoji",
-    "image",
+    // "image",
     "remove",
     "history"
   ],
@@ -321,36 +321,36 @@ export default {
     ],
     title: undefined
   },
-  embedded: {
-    icon: embedded,
-    className: undefined,
-    component: undefined,
-    popupClassName: undefined,
-    embedCallback: undefined,
-    defaultSize: {
-      height: "auto",
-      width: "auto"
-    },
-    title: undefined
-  },
-  image: {
-    icon: image,
-    className: undefined,
-    component: undefined,
-    popupClassName: undefined,
-    urlEnabled: true,
-    uploadEnabled: true,
-    previewImage: false,
-    alignmentEnabled: true,
-    uploadCallback: undefined,
-    inputAccept: "image/gif,image/jpeg,image/jpg,image/png,image/svg",
-    alt: { present: false, mandatory: false },
-    defaultSize: {
-      height: "auto",
-      width: "auto"
-    },
-    title: undefined
-  },
+  // embedded: {
+  //   icon: embedded,
+  //   className: undefined,
+  //   component: undefined,
+  //   popupClassName: undefined,
+  //   embedCallback: undefined,
+  //   defaultSize: {
+  //     height: "auto",
+  //     width: "auto"
+  //   },
+  //   title: undefined
+  // },
+  // image: {
+  //   icon: image,
+  //   className: undefined,
+  //   component: undefined,
+  //   popupClassName: undefined,
+  //   urlEnabled: true,
+  //   uploadEnabled: true,
+  //   previewImage: false,
+  //   alignmentEnabled: true,
+  //   uploadCallback: undefined,
+  //   inputAccept: "image/gif,image/jpeg,image/jpg,image/png,image/svg",
+  //   alt: { present: false, mandatory: false },
+  //   defaultSize: {
+  //     height: "auto",
+  //     width: "auto"
+  //   },
+  //   title: undefined
+  // },
   remove: {
     icon: eraser,
     className: undefined,

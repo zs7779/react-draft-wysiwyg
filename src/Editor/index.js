@@ -30,7 +30,7 @@ import Controls from '../controls';
 import getLinkDecorator from '../decorators/Link';
 import getMentionDecorators from '../decorators/Mention';
 import getHashtagDecorator from '../decorators/HashTag';
-import getBlockRenderFunc from '../renderer';
+// import getBlockRenderFunc from '../renderer';
 import defaultToolbar from '../config/defaultToolbar';
 import localeTranslations from '../i18n';
 import './styles.css';
@@ -46,15 +46,15 @@ class WysiwygEditor extends Component {
     this.wrapperId = `rdw-wrapper-${wrapperId}`;
     this.modalHandler = new ModalHandler();
     this.focusHandler = new FocusHandler();
-    this.blockRendererFn = getBlockRenderFunc(
-      {
-        isReadOnly: this.isReadOnly,
-        isImageAlignmentEnabled: this.isImageAlignmentEnabled,
-        getEditorState: this.getEditorState,
-        onChange: this.onChange,
-      },
-      props.customBlockRenderFunc
-    );
+    // this.blockRendererFn = getBlockRenderFunc(
+    //   {
+    //     isReadOnly: this.isReadOnly,
+    //     isImageAlignmentEnabled: this.isImageAlignmentEnabled,
+    //     getEditorState: this.getEditorState,
+    //     onChange: this.onChange,
+    //   },
+    //   props.customBlockRenderFunc
+    // );
     this.editorProps = this.filterEditorProps(props);
     this.customStyleMap = this.getStyleMap(props);
     this.compositeDecorator = this.getCompositeDecorator(toolbar);
@@ -490,7 +490,7 @@ class WysiwygEditor extends Component {
             customStyleMap={this.getStyleMap(this.props)}
             handleReturn={this.handleReturn}
             handlePastedText={this.handlePastedTextFn}
-            blockRendererFn={this.blockRendererFn}
+            // blockRendererFn={this.blockRendererFn}
             handleKeyCommand={this.handleKeyCommand}
             ariaLabel={ariaLabel || 'rdw-editor'}
             blockRenderMap={blockRenderMap}

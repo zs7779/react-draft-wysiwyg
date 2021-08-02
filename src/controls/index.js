@@ -6,9 +6,9 @@ import list from "./List";
 import textAlign from "./TextAlign";
 import colorPicker from "./ColorPicker";
 import link from "./Link";
-import embedded from "./Embedded";
+// import embedded from "./Embedded";
 import emoji from "./Emoji";
-import image from "./Image";
+// import image from "./Image";
 import remove from "./Remove";
 import history from "./History";
 
@@ -21,9 +21,9 @@ export default {
   textAlign,
   colorPicker,
   link,
-  embedded,
+  // embedded,
   emoji,
-  image,
+  // image,
   remove,
   history
 };
